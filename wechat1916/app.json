@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/film/film"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#07c160",
+    "navigationBarTitleText": "菁菁",
+    "backgroundColor": "#6fa3905c",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "color": "#797d82",
+    "selectedColor": "#ff5f16",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/film/film",
+        "text": "电影",
+        "iconPath": "assets/imgs/films.png",
+        "selectedIconPath": "assets/imgs/films_0.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "影院",
+        "iconPath": "assets/imgs/cinemas.png",
+        "selectedIconPath": "assets/imgs/cinemas_0.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "assets/imgs/my.png",
+        "selectedIconPath": "assets/imgs/my_a.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

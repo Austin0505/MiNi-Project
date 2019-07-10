@@ -1,0 +1,23 @@
+<!--pages/film/film.wxml-->
+<import src="../../components/templates/header.wxml"/>
+<view class="pageBox">
+   <template is="myHeader" data="{{title:'Film'}}"></template>
+   <!-- <header></header> -->
+   {{msg}}
+   <view id="{{id}}" wx:if="{{bool}}"></view>
+   <view wx:for="{{fours}}" wx:for-index="idx" wx:for-item="i" wx:key="{{i.name}}">
+       {{idx}} - {{i.name}}
+   </view>
+   <view hidden="{{true}}">
+     template一毛一样
+   </view> 
+   <view wx:if="{{like=='jj'}}">
+      菁菁
+   </view>
+   <view wx:elif="{{like == 'hh'}}">
+     华华
+   </view>
+   <view wx:else>
+      桐桐
+   </view>
+</view>

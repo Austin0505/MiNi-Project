@@ -1,0 +1,4 @@
+/* pages/film/film.wxss */
+.pageBox{
+  height: 400px;
+}

@@ -1,0 +1,52 @@
+<view>
+   <!-- <scroll-view scroll-x style='height:44px;width:100%;white-space: nowrap'>
+     <view wx:for="{{color}}" class='color-item'>
+         {{item}}
+     </view>
+   </scroll-view> -->
+   <view hover-class="active" bindtap='changeSwiper'>
+       点我看我的反应
+   </view>
+   <!-- <swiper  bindchange="handleSwiper"  circular current="{{current}}" indicator-dots indicator-active-color="hotpink" style="height:210px">
+      <swiper-item>
+         <image src="https://static.maizuo.com/v5/upload/ec37728b66e7f4bcfa0aa31b3d3afa5f.jpg?x-oss-process=image/quality,Q_70"></image>
+      </swiper-item>
+       <swiper-item>
+         <image src="https://static.maizuo.com/v5/upload/2ca6f424a5d43e2928847ad65a807666.jpg?x-oss-process=image/quality,Q_70"></image>
+      </swiper-item>
+       <swiper-item>
+         <image src="https://static.maizuo.com/v5/upload/11383fd13de7b161c70b20c9c8cea9fd.jpg?x-oss-process=image/quality,Q_70"></image>
+      </swiper-item>
+   </swiper> -->
+
+  <!-- <movable-area style="height: 200px; width: 200px;border:1px solid">
+     <movable-view out-of-bounds direction="all" style="height: 60px; width: 60px;border:1px solid red">
+     </movable-view>
+  </movable-area> -->
+<!-- 
+  <icon type='waiting' size="48" color="hotpink"></icon>  
+  <progress active activeColor="hotpink" stroke-width="3" show-info percent="{{percent}}" border-radius="8" bindactiveend="handleProgress"></progress>
+
+   <rich-text nodes="{{nodes}}"></rich-text>
+   <text decode>
+     &lt;
+   </text>
+
+   <button bindgetphonenumber="handleUser" open-type="share" size="mini" type='primary'>确认</button> -->
+
+    <checkbox-group bindchange="checkboxChange">
+       <!-- js:<checkbox value='js' checked color='hotpink'></checkbox>
+       css:<checkbox value='css' color='hotpink'></checkbox>
+       html:<checkbox value='html' color='hotpink'></checkbox> -->
+       <checkbox checked='{{item.checked}}' value="{{item.name}}" wx:for="{{items}}" color='hotpink'>
+         {{item.value}}
+       </checkbox> 
+    </checkbox-group>
+
+    <radio-group bindchange="handleRadio">
+       <radio value="0" checked>男</radio>
+       <radio value="1">女</radio>
+    </radio-group>
+    <!-- <checkbox checked="{{checked}}" color='hotpink'></checkbox>
+    <switch color="hotpink" bindchange="handleSwitch"></switch> -->
+</view>
